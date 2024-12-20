@@ -1,1 +1,12 @@
-spring.application.name=NeetQuizBackend
+server:
+  port: 8084
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;database=neetquizdb;encrypt=true;trustServerCertificate=true;
+    username: sa
+    password: root
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    open-in-view: false
